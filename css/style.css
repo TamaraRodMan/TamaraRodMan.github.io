@@ -1,0 +1,229 @@
+		/* el taño de la página completa*/
+		body,html{
+			width: 100%;
+	        height: 100%;
+	        margin: 0;
+			padding: 0;
+		}
+
+		/*Fondo de pantalla completo*/
+		#completa{
+			width: 100%;
+			height: 100%;
+			background-color: white;
+		}
+
+		/*Es el recuadro con borde blanco*/
+		header{
+			width: 99,99%;
+			height: 174px;
+			/*background-color: white;*/
+			border: 3px solid white;
+		}
+
+		/*Fondo del recuadro con borde blanco*/
+		#cuadrologo{
+			width: 100%;
+			height: 174px;
+			/*margin: 5px;*/
+			background-color: #5891F0;
+		}
+
+		/*Cuadro que hace de fondo del logo*/
+		#logo{
+			width: 10%;
+			height: 100%;
+			background-color: white;
+			background-size: cover;
+			float: left;
+		}
+
+		/*Esta clase es para modificar todo lo que haya dentro de la caja, fondo y elementos en global*/
+		.titulo_pagina{
+			width: 90%;
+			height: 100%;
+			float: right;
+			/*background-color: white; es conveniente ir comprobando con el color para un ajuste mas exacto*/
+			/*padding: 50px; sirve para  desplazar según los elementos que tienen alrededorbajar del objeto*/
+		}
+
+		/*con esta clase h1 modificamos las características y posición del texto*/
+		.titulo_pagina h1{
+			margin-top: 60px;
+			font-size: 250%;
+			color: white;
+			text-align:center;
+			font-family:Arial black;
+			/*text-ident: 50px;*/
+			/*text-decoration-style: double;*/
+			/*margin: 0 auto; en este caso no funciona */
+		}
+
+/*_______________________________CSS_DESPLEGABLE___________________________________________*/
+
+		/*Caja donde va el menu desplegable*/
+		.superior{
+			width: 100%;
+			height: 30%;
+			background-color: white;
+			float: left;
+			/*margin: 2px;*/
+			/*height: 80%;*/
+		}
+
+		/* Listado del menu desplegable de la caja*/
+		.superior ul{
+			list-style: none;/*No declararlo como lista para que salgan un nombre al lado del otro*/
+			overflow: hidden;
+			background-color: white;
+		}
+		/*Esta sección es para que el menu salgan las opciones una al lado del otro y no en lista*/
+		.superior ul li{
+			float: left;
+			padding: 5px;
+		}
+
+		/*Esta sección es para dar las carácterísticas al texto, color, tamaño, etc...*/
+		.superior ul li a{
+			display: inline-block; /*centrado de arriba a bajo/*Que te ponga los enlaces en línea*/
+			color: #5891F0;
+    		/*text-align: center;*/
+    		padding: 10px 30px;
+    		text-decoration: none;/*Quitar el subrayado de Los link*/
+		}
+
+		/*Este paso es para que cuando pongas el cursor encima de la palabra salga el recuadro de color*/
+		.superior ul li a:hover{
+			background-color: #A9E8FF;
+		}
+
+/*_____________________________________CSS_CAPA CENTRAL__________________________________________*/
+
+		#contenido{
+			width: 100%;
+			height: 50%;
+			/*bottom: auto;*/
+			background-color: white;
+			/*color:white;*/
+			display: block;
+		}
+
+		/*capa lateral izquierda*/
+		section{
+			width: 80%;
+			height: 140%;
+			float: left;
+			/*background-image:"http://wallpapercave.com/wp/bHMVnPQ.jpg";*/
+			background-color: lightblue;
+
+		}
+		
+		.texto h1{
+			margin-left: 200px;
+			margin-right: 200px;
+			margin-top: 60px;
+			font-size: 100%;
+			color: black;
+			/*text-align:center;*/
+			font-family:Comic;
+		}
+
+
+		form label{
+			margin-top: 60px;
+			margin-left: 600px;
+			color: black;
+			text-align:center;
+			font-family:Comic;
+		}
+
+
+		.selecciona{
+			color: black;
+			/*text-align:center;*/
+			background-color: lightblue;
+			background-origin: padding-box;
+		}
+
+		/*input{
+			margin-top: 60px;
+			margin-left: 250px;
+			color: white;
+			text-align:center;
+			font-family:Comic;
+		}*/
+
+		/*capa lateral derecha*/
+		aside{
+			width: 20%;
+			height: 140%;
+			float: left;
+			/*background-color: lightblue;*/
+			/*Como añadir una imagen*/
+			background-image: url("https://www.readwriteweb.es/wp-content/uploads/2016/10/34.jpg");
+			background-position: right top;
+			background-size: cover; /*para que la imagen se centre y ajuste a la caja*/
+			background-origin: padding-box; /*para que el texto añadido se situe en medio*/
+			/*background-size: 550px 320px;*/
+			/*Este background- repeat: es para que la imagen no se repita*/
+    		/*background-repeat: no-repeat;*/
+			/*background-attachment: fixed;*/
+		}
+
+		.texto1{
+			color: white;
+			padding: 30px 50px;
+			text-align:center;
+			/*background-color: lightblue;*/
+			background-origin: content-box;
+		}
+
+
+
+/*_____________________________________CSS_PIE DE PÁGINA__________________________________________*/
+		
+		/*Esta sección es para definir el pie de pagina/caja completas*/
+		footer{
+			width: 100%;
+			height: 20%;
+			/*list-style: none;*/
+			/*background-color: #EAEEF5;*/
+			/*float: none;*/
+			/*display: block;*/
+		}
+		
+		.inferior{
+			width: 174px;
+			height: 20%;
+			background-color: white;
+			float: left;
+			/*list-style: none;*/
+			/*background-origin: padding-box;*/
+			/*margin: 2px;*/
+			/*height: 80%;*/
+		}
+
+		/*Esta sección es para que los elementos salgan una al lado del otro y no en lista*/
+		.inferior ul li{
+			width: 174px;
+			height: 20%;
+			float: left;
+			padding: 5px;
+			/*list-style: none;*/
+			/*background-color:white;*/
+		}
+
+		/*Esta sección es para dar características a los elmentos de la caja*/
+		.inferior ul li a{
+			list-style: none;
+			display: inline-block; /*centrado de arriba a bajo/*Que te ponga los enlaces en línea*/
+			/*color: #5891F0;*/
+    		text-align: center;
+    		padding: 10px 10px;
+    		text-decoration: none;/*Quitar el subrayado de Los link*/
+    		/*background-image: url("http://www.ubishops.ca/wp-content/uploads/facebook-logo-png-transparent-background.png");*/
+			background-position: left top;
+
+		}
+
+
