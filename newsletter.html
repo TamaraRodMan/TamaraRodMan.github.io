@@ -1,0 +1,58 @@
+<!--Crea una página web en HTML5 con un formulario de registro (para darte de alta, por ejemplo, en una red social) que tenga los siguientes campos:
+• nombre_usuario
+• nombre
+• apellidos
+• password
+• sexo (masculino: valor “m”, femenino: valor “f”, otros: valor “o”)
+• fecha_nacimiento
+• color_favorito
+Usa la etiqueta label para añadir los títulos a los campos de manera que, haciendo click en la etiqueta, el cursor aparezca en su campo correspondiente. No importa la ruta a la que apunta el formulario ni el método HTTP.
+Pruébalo en Google Chrome, Mozilla Firefox e Internet Explorer para comprobar la compatibilidad de los componentes utilizados.-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="refresh" ="refresh" content="30">
+	<title>DECOBOX</title>
+</head>
+
+<body style="background-color: #E8C5DB">
+	<h1 align="center" style="font-size:100px">DeCOBOX</h1>
+
+	<p align="center">Introduce tus datos para registrarte en nuestra newsletter:</p>
+
+	<form action="" method="post" accept-charset="utf-8" target="_blank" style="margin-left: 800px; margin-right: 80px">
+
+		<label for="nombredeusuario">Nombre de usuario:</label>
+			<input id="nombredeusuario" type="text" name="nombre"><br>
+
+		<label for="nombre">Nombre:</label>
+			<input id="nombre" type="text" name="usuario"><br>
+
+		<label for="apellidos">Apellidos:</label>
+			<input id="apellidos" type="text" name="usuario"><br>
+
+		<label for="contraseña">Contraseña:</label>
+			<input id="contraseña" type="password" name="Contraseña" placeholder="contraseña"><br>
+		
+		<div>
+			Selecciona:
+		</div>
+		<div>
+			<input type="radio" name="genero" value="genero"> Hombre
+		</div>
+		<div>
+			<input type="radio" name="genero" value="genero"> Mujer
+		</div>
+
+		<label for="fechadenacimiento">Fecha de nacimiento:</label>
+			<input id="fechadenacimiento" type="date" name="Fecha de nacimiento"><br>
+
+		<label for="colorfavorito">Elige tu color favorito:</label>
+  			<input id="colorfavorito" type="color" name="Color favorito"><br>
+		<br>
+		<input style="margin-left: 80px; margin-right: 80px;" type="submit" name="subcribirse" value="Subsicribirse">
+	</form>	
+</body>
+</html>
